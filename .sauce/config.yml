@@ -1,0 +1,23 @@
+kind: imagerunner
+apiVersion: v1alpha
+
+suites:
+  - name: "Postman Newman Tests"
+    image: cbsl/newman:0.0.1
+    timeout: 10m
+    workload: other
+    artifacts:
+      - "/app/artifacts/test-results"
+    files:
+      - src: tests/newmanTest.json
+        dst: /app/tests/newmanTest.json
+
+    entrypoint: newman run tests/newmanTest.json
+
+artifacts:
+  cleanup: false
+  download:
+    when: always
+    match:
+      - '*'
+    directory: ./artifacts
