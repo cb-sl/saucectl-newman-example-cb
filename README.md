@@ -1,4 +1,4 @@
-## saucectl & Postman example using Sauce Orchestrate (Beta)
+## saucectl & Postman example using Sauce Orchestrate
 
 ### What is the purpose of this repo?
 The purpose of this repo is to show extensibility of ```saucectl```.
@@ -63,5 +63,3 @@ You can also query our API endpoint with ```runid``` and your Sauce Labs credent
 
 
 :checkered_flag: Thank you for reading this far, hope you found this useful.
-
-I am the Senior Product Manager for ```saucectl```, and I would love for you to try this and share feedback :green_heart:.
